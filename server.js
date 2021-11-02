@@ -29,7 +29,7 @@ var server = http.createServer(function (request, response) {
     response.write(`
     <!DOCTYPE html>
     <head>
-      <link rel="stylesheet" herf="/x">
+      <link rel="stylesheet" href="/x">
     </head>
     <body>
       <h1>这是我的第一个Node.js服务器程序</h1>
@@ -38,9 +38,9 @@ var server = http.createServer(function (request, response) {
     response.end()
   } else if (path === '/x') {
     response.statusCode = 200
-    response.setHeader('Content-Type', 'text/html;charset=utf-8')
+    response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`
-    body{
+    h1{
       color: red;
     }
     `)
