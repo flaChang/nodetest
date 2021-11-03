@@ -44,6 +44,7 @@ var server = http.createServer(function (request, response) {
       color: red;
     }
     `)
+    response.end()
   } else {
     response.statusCode = 404
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
